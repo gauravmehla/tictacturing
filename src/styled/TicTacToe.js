@@ -52,7 +52,7 @@ export const Squares = ({
 			fill = 'lightgreen'
 		}
 		if(gameOver || !yourTurn || mark){
-			makeMove = () => console.log('nope!');
+			makeMove = () => console.log('nope!',gameOver, yourTurn, mark);
 		}
 
 		return(
