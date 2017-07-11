@@ -98,11 +98,11 @@ class TicTacToe extends Component {
 	}
 
 	winChecker = (gameState) => {
-		let combos = this.combos
+		let combos = this.combos;
 		return combos.find((combo) => {
 			let [a,b,c] = combo;
 			return (
-				gameState[a] === gameState[b] && gameState[a] === gameState[c] && gameState
+				gameState[a] === gameState[b] && gameState[a] === gameState[c] && gameState[a]
 			);
 		})
 	}
